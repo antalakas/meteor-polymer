@@ -1,19 +1,19 @@
 Package.describe({
-	summary: "Add Polymer Base to meteor Project",
-	version: "1.0.2",
-	git: "https://github.com/ecwyne/meteor-polymer.git",
-	name: 'ecwyne:polymer'
+  summary: "Add Polymer Base to meteor Project",
+  version: "1.0.3",
+  git: "https://github.com/ecwyne/meteor-polymer.git",
+  name: 'ecwyne:polymer'
 });
 
 Npm.depends({
-	bower: '1.3.10'
+  bower: '1.3.10'
 });
 
 Package.onUse(function(api) {
-	api.use('webapp', 'server');
-  	api.use(['templating'], 'client');
-  	api.use(['underscore'], ['client', 'server']);
-	api.versionsFrom('METEOR@0.9.0');
-	api.addFiles('polymer.js', 'server');
-	api.addFiles('import.html', 'client');
+  api.use('webapp', 'server');
+  api.use(['templating'], 'client');
+  api.use(['underscore'], ['client', 'server']);
+  api.versionsFrom('METEOR@0.9.0');
+  api.addFiles('polymer.js', 'server');
+  api.addFiles('import.html', 'client');
 });
